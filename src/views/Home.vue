@@ -160,16 +160,21 @@
         </el-carousel-item>
       </el-carousel>
     </div>
-    <div id="sixth">
+    <div>
       <h1>友情链接</h1>
       <p>
         <i class="el-icon-position"></i
-        ><a href="https://github.com/sdutsoftlab">github仓库</a>
+        >github主页:<a href="https://github.com/sdut-IT-lab">SDUT IT LAB</a>
       </p>
       <p>
         <i class="el-icon-right"></i>友情链接:<a href="https://www.baidu.com"
           >信息技术实验室</a
         >
+      </p>
+      <p>
+        <i class="el-icon-right"></i>开发者仓库:<a href="https://github.com/iznilul"
+      >半径圆radCircle</a
+      >
       </p>
       <div class="h6 pb-2">Copyright</div>
       <p>
@@ -177,6 +182,7 @@
       </p>
       <br />
     </div>
+    <br />
     <br />
     <br />
     <!-- <el-tabs id="tab" :tab-position="tabPosition">
@@ -215,7 +221,6 @@
             <el-step title="学习方向"></el-step>
             <el-step title="主要比赛"></el-step>
             <el-step title="实验室照片"></el-step>
-            <el-step title="友情链接"></el-step>
         </el-steps>
   </div>
 </template>
@@ -241,7 +246,6 @@ export default {
       "third",
       "fourth",
       "fifth",
-      "sixth",
     ]);
     const active = ref("");
     let actives = reactive({
@@ -250,7 +254,6 @@ export default {
       third: "2",
       fourth: "3",
       fifth: "4",
-      sixth: "5",
     });
     const scrollHandle = (e) => {
       // 获取视窗高度
