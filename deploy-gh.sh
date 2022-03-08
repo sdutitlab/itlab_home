@@ -14,4 +14,4 @@ git init
 git add -A
 git commit -m $time
 ## 把上面的 <USERNAME> 换成你自己的 Github 用户名，<REPO> 换成仓库名，比如我这里就是：
-git push -f git@github.com:sdutitlab/sdutitlab.github.io.git master
+git push -f git@gitee.com:sdutitlab/sdutitlab.git master

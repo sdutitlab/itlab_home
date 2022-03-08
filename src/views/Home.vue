@@ -227,12 +227,6 @@
 
 <script>
 import AOS from "aos";
-import img from "../assets/IMG_20210513_215922.b7803810.jpg";
-import img1 from "../assets/IMG_20210513_220016.259908af.jpg";
-import img2 from "../assets/IMG_20210513_220132.e3a986db.jpg";
-import img3 from "../assets/IMG_20210625_195130.4f5d9041.jpg";
-import img4 from "../assets/IMG_20210625_195142.9ac30b75.jpg";
-import img5 from "../assets/IMG_20210625_195150.1f6cc4f4.jpg";
 import logo from "../assets/itlab.png";
 import { onMounted } from "@vue/runtime-core";
 import { ref, reactive } from "vue";
@@ -307,7 +301,13 @@ export default {
   data() {
     return {
       tabPosition: "left",
-      images: [null, img4, img1, img2, img3, img, img5],
+      images: [null,
+        "https://cdn.jsdelivr.net/gh/iznilul/img/1646756950230.jpg",
+        "https://cdn.jsdelivr.net/gh/iznilul/img/1646756950354.jpg",
+        "https://cdn.jsdelivr.net/gh/iznilul/img/1646756950460.jpg",
+        "https://cdn.jsdelivr.net/gh/iznilul/img/1646756950563.jpg",
+        "https://cdn.jsdelivr.net/gh/iznilul/img/1646756950668.jpg",
+        "https://cdn.jsdelivr.net/gh/iznilul/img/1646756950771.jpg"],
       logo: logo,
     };
   },
