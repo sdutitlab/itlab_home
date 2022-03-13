@@ -1,6 +1,6 @@
 const api = {
-  signUp: '/api/common/signUp',
-  query: '/api/common/querySignUp',
+  signUp: '/api/okr/signup/add',
+  query: '/api/okr/signup/query',
 }
 
 export default api
