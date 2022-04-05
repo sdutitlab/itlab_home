@@ -181,6 +181,8 @@
                             h('br',null,null),
                             h('p', null,"更新时间: "+res.data.updateTime),
                             h('br',null,null),
+                            h('p', null,"纳新群QQ号: "+res.data.other),
+                            h('br',null,null),
                         ]),
                         confirmButtonText: '确定',
                     })

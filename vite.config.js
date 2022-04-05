@@ -14,5 +14,12 @@ export default defineConfig(
             },
             extensions: ['.js', '.vue', '.json'],
         },
+        // proxy: {
+        //     '/api': {
+        //         target: 'http://localhost:9101',
+        //         changeOrigin: true,
+        //         pathRewrite: {'^/api': ''}
+        //     }
+        // }
     }
 )
