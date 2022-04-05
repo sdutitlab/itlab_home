@@ -1,0 +1,118 @@
+$design_width: 1536; //设计稿的宽度，根据实际项目调整
+$design_height: 824; //设计稿的高度，根据实际项目调整
+
+@function px2rem($px) {
+  $design_font_size: 12;
+  @return ($px/$design_font_size) + rem;
+}
+
+#home {
+  z-index: 1;
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  #logo {
+    img {
+      width: px2rem(200)
+    }
+  }
+  #third {
+    .element-icon {
+      margin-left: auto;
+      margin-right: auto;
+      width: px2rem(50);
+      height: px2rem(50);
+
+      i {
+        font-size: px2rem(50)
+      }
+    }
+  }
+
+  div {
+    color: #d2e8ff;
+  }
+
+  a {
+    color: #d2e8ff;
+  }
+
+  p {
+    color: #d2e8ff;
+    font-size: px2rem(18);
+  }
+
+  .box-card {
+    background: #000000;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+  }
+
+  #tab {
+    position: fixed; // 关键
+    height: px2rem(500);
+    top: px2rem(100);
+    left: 0;
+    bottom: px2rem(50);
+
+    .el-tabs__item {
+      font-size: px2rem(20);
+    }
+  }
+
+  .el-card {
+    background-color: black;
+    border-color: #000000;
+  }
+
+  #step {
+    position: fixed; // 关键
+    height: px2rem(400);
+    top: px2rem(100);
+    right: px2rem(50);
+    bottom: px2rem(50);
+
+    .el-step__title {
+      font-size: px2rem(20);
+    }
+  }
+
+  .el-carousel__item h3 {
+    color: #000000;
+    font-size: px2rem(15);
+    opacity: 0.5;
+    line-height: px2rem(200);
+    margin: 0;
+  }
+
+  .img-border {
+    width: 100%;
+    height: px2rem(500);
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .el-step__icon-inner {
+    color: black;
+  }
+
+  .el-tab-pane {
+    font-size: px2rem(18);
+  }
+}

@@ -15,8 +15,8 @@
 
         </div>
         <div id="logo" data-aos="zoom-in-up" data-aos-anchor="top-center">
-          <el-card style="width: 450px">
-            <img :src="logo" style="width: 400px"/>
+          <el-card>
+            <img :src="logo"/>
           </el-card>
         </div>
       </div>
@@ -74,7 +74,7 @@
               <i class="el-icon-star-on"></i>
             </div>
             <h3>科研技术的学习</h3>
-            <p style="margin-top:40px;">
+            <p>
               主流企业或科研技术，包括深度学习，大数据开发技术，
               NLP自然语言处理，数据挖掘，知识图谱等，
               可以和学院相关老师进行相关的技术研究，
@@ -185,36 +185,6 @@
     <br />
     <br />
     <br />
-    <!-- <el-tabs id="tab" :tab-position="tabPosition">
-      <el-tab-pane name="0" label="实验室介绍"
-        ><a href="#first">实验室介绍</a></el-tab-pane
-      >
-      <br />
-      <br />
-      <el-tab-pane name="1" label="欢迎加入"
-        ><a href="#second">欢迎加入</a></el-tab-pane
-      >
-      <br />
-      <br />
-      <el-tab-pane name="2" label="学习方向"
-        ><a href="#third">学习方向</a></el-tab-pane
-      >
-      <br />
-      <br />
-      <el-tab-pane name="3" label="主要比赛"
-        ><a href="#fourth">主要比赛</a></el-tab-pane
-      >
-      <br />
-      <br />
-      <el-tab-pane name="4" label="实验室照片"
-        ><a href="#fifth">实验室照片</a></el-tab-pane
-      >
-      <br />
-      <br />
-      <el-tab-pane name="5" label="友情介绍"
-        ><a href="#sixth">友情链接</a></el-tab-pane
-      >
-    </el-tabs> -->
         <el-steps id="step" direction="vertical" :active="active-0">
             <el-step title="实验室介绍"></el-step>
             <el-step title="欢迎加入"></el-step>
@@ -230,6 +200,7 @@ import AOS from "aos";
 import logo from "../assets/itlab.png";
 import { onMounted } from "@vue/runtime-core";
 import { ref, reactive } from "vue";
+import {setScale} from "../utils/resize";
 export default {
   name: "Home",
   setup() {
@@ -292,6 +263,7 @@ export default {
     };
     onMounted(() => {
       window.addEventListener("scroll", scrollHandle);
+      window.addEventListener("resize", setScale);
     });
     return {
       active,
@@ -314,6 +286,6 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import "../style/Home";
+<style lang="scss">
+@import "../style/Home.scss";
 </style>

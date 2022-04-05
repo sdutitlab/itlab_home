@@ -1,0 +1,53 @@
+$design_width: 1536; //设计稿的宽度，根据实际项目调整
+$design_height: 824; //设计稿的高度，根据实际项目调整
+
+@function px2rem($px) {
+  $design_font_size: 12;
+  @return ($px/$design_font_size) + rem;
+}
+#wrapper {
+  //height: 100vh;
+  //width: 100vw;
+  //display: flex;
+  //flex-direction: row;
+  //justify-content: center;
+  #baseLayout {
+    height: 100%;
+    color: #000000;
+    position: relative; // 关键
+    box-sizing: border-box;
+    min-height: 100%; // 关键
+    #header {
+      z-index: 2;
+      height: px2rem(60);
+      position: fixed; // 关键
+      background: black;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    #content {
+      height: 100%;
+      width: 100%;
+      //z-index: 0;
+      //background: black;
+      position: absolute; // 关键
+      top: px2rem(50);
+      left: px2rem(-12);
+      right: 0;
+    }
+
+    #footer {
+      text-align: center;
+      overflow: auto;
+      background: black; //背景颜色，可以防止被覆盖
+      z-index: 1;
+      height: px2rem(30);
+      position: fixed; // 关键
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+}

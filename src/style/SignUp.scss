@@ -1,0 +1,50 @@
+$design_width: 1536; //设计稿的宽度，根据实际项目调整
+$design_height: 824; //设计稿的高度，根据实际项目调整
+
+@function px2rem($px) {
+  $design_font_size: 12;
+  @return ($px/$design_font_size) + rem;
+}
+
+#signUp{
+  z-index: 1;
+  top:5%;
+  left:20%;
+  right:20%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  position:absolute;
+  .page-header {
+    color: #d2e8ff;
+  }
+  .signUpForm {
+    .el-input{
+      line-height: px2rem(36);
+      width: 50%;
+    }
+    .el-input__inner {
+      color: #000000;
+    }
+    .el-input__inner::placeholder{
+      color: #000000;
+    }
+    .el-form-item .el-form-item__label {
+      font-size: px2rem(18);
+      color: #d2e8ff;
+    }
+    .el-textarea__inner{
+      color: black;
+    }
+    .el-textarea__inner::placeholder{
+      color: #000000;
+    }
+  }
+  #buttonList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

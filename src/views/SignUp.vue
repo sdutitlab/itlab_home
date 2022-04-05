@@ -1,6 +1,6 @@
 <template>
     <div id="signUp">
-        <h1 class="page-header">填写报名信息</h1>
+        <h2 class="page-header">填写报名信息</h2>
         <el-form :model="form" :rules="rules" ref="formRef" class="signUpForm">
             <el-form-item label="学号" prop="studentId">
                 <el-input type="text" v-model="form.studentId" placeholder="学号（必填）"></el-input>
@@ -205,6 +205,6 @@
     }
 </script>
 
-<style lang="less">
+<style lang="scss">
     @import "../style/SignUp";
 </style>

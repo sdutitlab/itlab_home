@@ -83,6 +83,6 @@
     }
 </script>
 
-<style lang="less">
+<style lang="scss">
     @import "../style/AContent";
 </style>

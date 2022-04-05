@@ -1,0 +1,32 @@
+$design_width: 1536; //设计稿的宽度，根据实际项目调整
+$design_height: 824; //设计稿的高度，根据实际项目调整
+
+@function px2rem($px) {
+  $design_font_size: 12;
+  @return ($px/$design_font_size) + rem;
+}
+
+#contact{
+  z-index: 1;
+  position:absolute;
+  top:5%;
+  left:20%;
+  right:20%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  p{
+    color: #d2e8ff;
+    font-size: px2rem(18);
+  }
+  .container h1{
+    color: #d2e8ff;
+  }
+  h3{
+    color: #d2e8ff;
+  }
+  h1{
+    color: #d2e8ff;
+  }
+}

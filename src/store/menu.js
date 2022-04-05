@@ -38,18 +38,18 @@ const menu = {
         name: 'cms', // 要跳转的路由名称 不是路径
         index:'2',
         icon:'el-icon-folder',
-        url: 'https://www.baidu.com',
+        url: 'https://www.sdutitlab.club',
         isExternal: true, // 外链 跳到一个外部的 URL 页面
         text: '后台管理', // 点击侧边栏跳到一个单独的路由页面，需要提前在 router.js 定义
       },
       {
-        path: '/okr',
-        name: 'okr',
+        path: '/blog',
+        name: 'blog',
         index:'1',
         icon:'el-icon-cpu',
-        url: 'https://www.baidu.com',
+        url: 'https://sdutitlab.github.io',
         isExternal: true, // 外链 跳到一个外部的 URL 页面
-        text: '实验室okr记录',
+        text: '博客平台',
       },
     ],
   },

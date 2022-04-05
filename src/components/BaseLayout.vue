@@ -1,8 +1,10 @@
 <template>
-    <div id="baseLayout">
-        <AHeader @gotoPage="gotoPage"></AHeader>
-        <AContent></AContent>
-        <AFooter></AFooter>
+    <div id="wrapper">
+        <div id="baseLayout">
+            <AHeader @gotoPage="gotoPage"></AHeader>
+            <AContent></AContent>
+            <AFooter></AFooter>
+        </div>
     </div>
 </template>
 <script>
@@ -32,6 +34,6 @@
     }
 </script>
 
-<style lang="less">
-    @import "../style/BaseLayout.less";
+<style lang="scss">
+    @import "../style/BaseLayout.scss";
 </style>
