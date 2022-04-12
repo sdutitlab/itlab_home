@@ -1,10 +1,4 @@
-$design_width: 1536; //设计稿的宽度，根据实际项目调整
-$design_height: 824; //设计稿的高度，根据实际项目调整
 
-@function px2rem($px) {
-  $design_font_size: 12;
-  @return ($px/$design_font_size) + rem;
-}
 
 #home {
   z-index: 1;

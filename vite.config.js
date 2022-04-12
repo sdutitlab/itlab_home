@@ -5,7 +5,7 @@ import path from "path"
 export default defineConfig(
     {
         plugins: [vue()],
-        publicPath:'./',
+        publicPath: './',
         base: './',
         resolve: {
             alias: {
@@ -13,6 +13,13 @@ export default defineConfig(
                 '/@/': path.resolve(__dirname, './src')
             },
             extensions: ['.js', '.vue', '.json'],
+        },
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: '@import "./src/style/global.scss";' // 添加公共样式
+                }
+            }
         },
         // proxy: {
         //     '/api': {
