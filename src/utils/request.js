@@ -38,7 +38,7 @@ const allowRequest = function (reqList, url) {
     }
 }
 const service = axios.create({
-  baseURL: baseURL,
+  // baseURL: baseURL,
   timeout: 6000,
 })
 

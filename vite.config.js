@@ -21,11 +21,13 @@ export default defineConfig(
                 }
             }
         },
-        proxy: {
-            '/api': {
-                target: 'http://localhost:9101',
-                changeOrigin: true,
-                pathRewrite: {'^/api': ''}
+        server: {
+            proxy: {
+                '/api': {
+                    target: 'http://localhost:9101/',
+                    changeOrigin: true,
+                    rewrite: (path) => path.replace(/^\/api/, '')
+                }
             }
         }
     }

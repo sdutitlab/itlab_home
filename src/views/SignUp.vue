@@ -175,7 +175,7 @@
                             h('br',null,null),
                             h('p', null,"自我介绍: "+res.data.profile),
                             h('br',null,null),
-                            h('p', null,"是否录取: "+res.data.statusName),
+                            h('p', {style:{'color':'red'}},"是否录取: "+res.data.statusName),
                             h('br',null,null),
                             h('p', null,"评语: "+res.data.comment),
                             h('br',null,null),
